@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fisify × Meliá Jardines del Teide · Plan de Acción · 1 año</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #14233F;
+  --blue: #294B73;
+  --blue-light: #3A6196;
+  --gold: #C2A14D;
+  --gold-bright: #D8BC6A;
+  --red: #8C2D3A;
+  --cream: #F6F2EA;
+  --paper: #FFFFFF;
+  --ink: #1A2233;
+  --gray: #6B7280;
+  --gray-light: #C9CDD4;
+  --line: #E5E0D6;
+  --success: #2E7D5B;
+  --warning: #C7892F;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+  --container: 1200px;
+  --pad-x: clamp(1.2rem, 4vw, 3rem);
+  --radius: 12px;
+  --radius-lg: 20px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); background: var(--cream); color: var(--ink); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--pad-x); }
+a { color: inherit; }
+
+/* NAV */
+.nav { position: sticky; top: 0; z-index: 100; background: rgba(20,35,63,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(194,161,77,0.22); padding: 0.9rem 0; color: #fff; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.nav-brand { font-family: var(--font-display); font-size: 1.65rem; letter-spacing: 0.04em; color: #fff; }
+.nav-brand strong { color: var(--gold); }
+.nav-brand .x { color: var(--gold); margin: 0 0.4em; }
+.nav-meta { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.72); }
+
+section { padding: clamp(2.5rem, 5.5vw, 4.5rem) 0; position: relative; }
+.section-num { font-family: var(--font-mono); font-size: 0.85rem; font-weight: 500; color: var(--red); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.8rem; display: inline-block; }
+.section-title { font-family: var(--font-display); font-size: clamp(2.2rem, 5.5vw, 4.4rem); line-height: 0.95; letter-spacing: 0.005em; color: var(--navy); margin-bottom: 1.4rem; max-width: 28ch; }
+.section-title .y { color: var(--gold); }
+.section-lead { font-size: clamp(1.05rem, 1.4vw, 1.25rem); color: var(--gray); max-width: 64ch; line-height: 1.55; }
+
+/* HERO */
+.hero { position: relative; background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); color: #fff; padding: clamp(4.5rem, 10vw, 8rem) 0 clamp(3.5rem, 8vw, 6rem); overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background-image: url('https://lh3.googleusercontent.com/d/1oBkC0bTiSZ0WJR1FaOxMTzJdwCjfDZgg=w1920'); background-position: center 42%; background-size: cover; background-repeat: no-repeat; opacity: 1; pointer-events: none; z-index: 0; }
+.hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,26,48,0.28) 0%, rgba(15,26,48,0.10) 45%, rgba(15,26,48,0.52) 100%), linear-gradient(100deg, rgba(15,26,48,0.70) 0%, rgba(15,26,48,0.46) 42%, rgba(15,26,48,0.20) 75%, rgba(15,26,48,0.08) 100%); pointer-events: none; z-index: 1; }
+.hero-inner { position: relative; z-index: 2; }
+.hero-eyebrow { font-family: var(--font-mono); font-size: 0.88rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-bright); margin-bottom: 2rem; display: flex; align-items: center; gap: 0.6rem; text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
+.hero-title { font-family: var(--font-display); font-size: clamp(3.5rem, 9vw, 7.5rem); line-height: 0.92; color: #fff; max-width: 16ch; margin-bottom: 1.4rem; letter-spacing: 0.005em; text-shadow: 0 3px 22px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.5); }
+.hero-subtitle { font-family: var(--font-mono); font-size: clamp(0.95rem, 1.3vw, 1.1rem); letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-bright); margin-bottom: 3rem; text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
+.hero-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.4rem 2.5rem; padding-top: 2.4rem; border-top: 1px solid rgba(255,255,255,0.2); max-width: 880px; }
+.hero-meta-item h4 { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.72); margin-bottom: 0.4rem; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+.hero-meta-item p { font-size: 1rem; font-weight: 500; color: #fff; line-height: 1.4; text-shadow: 0 1px 8px rgba(0,0,0,0.55); }
+.hero-cta { display: inline-flex; margin-top: 3rem; padding: 1rem 2rem; background: var(--gold); color: var(--navy); font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; border-radius: 100px; text-decoration: none; transition: transform 0.2s; }
+.hero-cta:hover { transform: translateY(-2px); }
+
+/* DIAGNOSTICO */
+.diag-kpis { display: grid; gap: 1rem; grid-template-columns: 1fr; margin-top: 2rem; }
+@media (min-width: 700px) { .diag-kpis { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1100px) { .diag-kpis { grid-template-columns: repeat(4, 1fr); } }
+.diag-kpi { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.8rem 1.5rem; position: relative; overflow: hidden; }
+.diag-kpi::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--gold); }
+.diag-kpi .label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); font-weight: 600; }
+.diag-kpi .pct { font-family: var(--font-display); font-size: clamp(2.4rem, 4.5vw, 3.2rem); line-height: 1; color: var(--navy); margin: 0.7rem 0; letter-spacing: 0.005em; }
+.diag-kpi p { font-size: 0.9rem; color: var(--gray); line-height: 1.5; }
+
+.roi-callout { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 1.7rem 1.9rem; margin-top: 2rem; display: grid; gap: 1.2rem; grid-template-columns: 1fr; align-items: center; position: relative; overflow: hidden; }
+@media (min-width: 760px) { .roi-callout { grid-template-columns: 2fr 1fr; } }
+.roi-callout h3 { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-bright); margin-bottom: 0.8rem; }
+.roi-callout .roi-headline { font-family: var(--font-display); font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.12; color: #fff; letter-spacing: 0.005em; }
+.roi-callout .roi-fit { text-align: center; font-family: var(--font-display); position: relative; z-index: 1; }
+.roi-callout .roi-fit .num { font-size: clamp(3.5rem, 7vw, 5.5rem); color: var(--gold-bright); line-height: 1; letter-spacing: 0.005em; }
+.roi-callout .roi-fit .lbl { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-top: 0.5rem; }
+
+/* BIO COMPACT (5 puestos) */
+.bio-compact { margin-top: 2.5rem; }
+.bio-compact h3 { font-family: var(--font-display); font-size: clamp(1.8rem, 3.4vw, 2.6rem); color: var(--navy); line-height: 1.05; letter-spacing: 0.005em; margin-bottom: 0.8rem; }
+.bio-compact .lead { font-size: 1.02rem; color: var(--gray); max-width: 64ch; line-height: 1.55; margin-bottom: 2.5rem; }
+.bio-grid-c { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .bio-grid-c { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1100px) { .bio-grid-c { grid-template-columns: repeat(3, 1fr); } }
+.bioc { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; }
+.bioc:hover { transform: translateY(-3px); box-shadow: 0 14px 32px -10px rgba(20,35,63,0.16); }
+.bioc-fig { width: 100%; aspect-ratio: 16/9; background: linear-gradient(160deg, #1B2E50 0%, #14233F 100%); display: block; }
+.bioc-fig svg { width: 100%; height: 100%; display: block; }
+.bioc-fig iframe { width: 100%; height: 100%; border: 0; display: block; }
+.bioc-fig video { width: 100%; height: 100%; object-fit: contain; background: #0E1A30; display: block; }
+.bioc-body { padding: 1.2rem 1.2rem 1.3rem; flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+.bioc-head { display: flex; justify-content: space-between; align-items: center; gap: 0.4rem; }
+.bioc-id { font-family: var(--font-mono); font-size: 0.68rem; color: var(--gray); letter-spacing: 0.06em; }
+.bioc-risk { font-family: var(--font-mono); font-size: 0.66rem; padding: 0.18rem 0.5rem; border-radius: 100px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+.bioc-risk.critical { background: var(--red); color: #fff; }
+.bioc-risk.high { background: var(--warning); color: #fff; }
+.bioc-risk.medium { background: rgba(199,137,47,0.18); color: #8a5a18; }
+.bioc-risk.low { background: rgba(46,125,91,0.15); color: var(--success); }
+.bioc h4 { font-family: var(--font-display); font-size: 1.2rem; color: var(--navy); line-height: 1.1; letter-spacing: 0.005em; }
+.bioc-area { font-family: var(--font-mono); font-size: 0.7rem; color: var(--blue-light); letter-spacing: 0.04em; text-transform: uppercase; }
+.bioc p { font-size: 0.85rem; color: var(--gray); line-height: 1.5; }
+.bio-note { margin-top: 1.6rem; font-size: 0.85rem; color: var(--gray); font-style: italic; }
+
+/* MOMENTUM (Juan) */
+.momentum-bg { background: var(--navy); color: #fff; }
+.momentum-bg .section-num { color: var(--gold-bright); }
+.momentum-bg .section-title { color: #fff; }
+.momentum-bg .section-lead { color: rgba(255,255,255,0.78); }
+.mom-grid { display: grid; gap: 1rem; grid-template-columns: 1fr; margin-top: 2.2rem; }
+@media (min-width: 700px) { .mom-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1100px) { .mom-grid { grid-template-columns: repeat(3, 1fr); } }
+.mom-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(194,161,77,0.2); border-radius: var(--radius); padding: 1.4rem 1.4rem; }
+.mom-card .mc-tag { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-bright); font-weight: 600; }
+.mom-card h4 { font-family: var(--font-display); font-size: 1.35rem; color: #fff; letter-spacing: 0.005em; margin: 0.5rem 0 0.4rem; line-height: 1.1; }
+.mom-card p { font-size: 0.88rem; color: rgba(255,255,255,0.78); line-height: 1.5; }
+.mom-fit { margin-top: 1.8rem; background: var(--gold); color: var(--navy); border-radius: var(--radius); padding: 1.6rem 1.8rem; }
+.mom-fit h4 { font-family: var(--font-display); font-size: clamp(1.4rem, 2.6vw, 1.9rem); letter-spacing: 0.005em; line-height: 1.1; margin-bottom: 0.6rem; }
+.mom-fit p { font-size: 0.98rem; line-height: 1.55; color: #2a2110; max-width: 70ch; }
+.mom-fit strong { color: var(--navy); }
+
+/* DE REACTIVO A 360 */
+.cambio-bg { background: var(--cream); }
+.modelos { display: grid; gap: 1.5rem; grid-template-columns: 1fr; margin-top: 2rem; }
+@media (min-width: 900px) { .modelos { grid-template-columns: 1fr 1fr; } }
+.modelo-card { background: #fff; border-radius: var(--radius); padding: 2rem 1.8rem; border: 1px solid var(--line); }
+.modelo-card.actual { border-top: 5px solid var(--red); }
+.modelo-card.fisify { border-top: 5px solid var(--gold); }
+.modelo-label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem; }
+.modelo-card.actual .modelo-label { color: var(--red); }
+.modelo-card.fisify .modelo-label { color: var(--navy); }
+.modelo-card h3 { font-family: var(--font-display); font-size: 1.6rem; color: var(--navy); margin-bottom: 1.5rem; line-height: 1.05; letter-spacing: 0.005em; }
+.flow-actual { font-family: var(--font-mono); font-size: 0.92rem; color: var(--ink); line-height: 1.8; letter-spacing: 0.01em; padding: 1rem 0; border-top: 1px dashed var(--line); border-bottom: 1px dashed var(--line); }
+.flow-actual .arrow { color: var(--red); margin: 0 0.4em; }
+.modelo-footer { margin-top: 1.5rem; font-size: 0.92rem; color: var(--gray); }
+.modelo-footer strong { color: var(--red); }
+.fisify-pillar { padding: 1.2rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; align-items: flex-start; }
+.fisify-pillar:last-child { border-bottom: 0; }
+.fisify-pillar .num { font-family: var(--font-display); font-size: 2.2rem; color: var(--gold); line-height: 0.9; letter-spacing: 0.02em; flex-shrink: 0; min-width: 40px; }
+.fisify-pillar h4 { font-family: var(--font-display); font-size: 1.15rem; color: var(--navy); margin-bottom: 0.3rem; letter-spacing: 0.005em; }
+.fisify-pillar .when { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; }
+.fisify-pillar p { font-size: 0.88rem; color: var(--gray); line-height: 1.5; }
+.cambio-banner { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 1.2rem 1.5rem; margin-top: 1.5rem; text-align: center; font-family: var(--font-mono); font-size: 0.92rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.cambio-banner strong { color: var(--gold-bright); }
+
+/* ELEMENTOS ACTIVOS */
+.elementos-bg { background: #fff; }
+.fisio-block { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(1.4rem, 2.5vw, 2rem); box-shadow: 0 16px 40px -12px rgba(20,35,63,0.1); display: grid; gap: 1.6rem; align-items: center; grid-template-columns: 1fr; margin-top: 2rem; }
+@media (min-width: 700px) { .fisio-block { grid-template-columns: 180px 1fr; } }
+.fisio-avatar { width: 180px; height: 180px; border-radius: 50%; border: 3px solid var(--gold); box-shadow: 0 12px 32px -8px rgba(20,35,63,0.18); justify-self: center; background: linear-gradient(160deg, #1B2E50 0%, #14233F 100%); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.fisio-avatar svg { width: 92px; height: 92px; }
+.fisio-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.eval-foto { float: right; width: 40%; max-width: 280px; margin: 0.2rem 0 0.8rem 1.4rem; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 10px 26px -12px rgba(20,35,63,0.25); }
+.eval-foto img { width: 100%; height: auto; display: block; }
+.yt-embed { max-width: 480px; aspect-ratio: 16/9; border-radius: 10px; overflow: hidden; margin: 0.4rem 0 1.2rem; border: 1px solid var(--line); box-shadow: 0 10px 26px -12px rgba(20,35,63,0.25); }
+.yt-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+@media (max-width: 760px){ .eval-foto { float: none; width: 100%; max-width: 100%; margin: 0 0 1rem 0; } }
+.fisio-block .eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); font-weight: 600; }
+.fisio-block h3 { font-family: var(--font-display); font-size: clamp(1.7rem, 3vw, 2.3rem); color: var(--navy); margin: 0.6rem 0 0.8rem; letter-spacing: 0.005em; line-height: 1.05; }
+.fisio-block .desc { font-size: 1rem; color: var(--ink); line-height: 1.55; margin-bottom: 1.2rem; }
+.fisio-block ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.fisio-block li { font-size: 0.92rem; color: var(--ink); line-height: 1.5; }
+.fisio-block li::before { content: '·'; color: var(--gold); font-weight: 700; margin-right: 0.5rem; }
+
+.serv-title { margin-top: 2.5rem; margin-bottom: 1.4rem; font-family: var(--font-display); font-size: clamp(1.5rem, 2.6vw, 2rem); color: var(--navy); letter-spacing: 0.005em; }
+.serv-grid { display: grid; gap: 1.3rem; grid-template-columns: 1fr; }
+@media (min-width: 700px) { .serv-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1100px) { .serv-grid { grid-template-columns: repeat(3, 1fr); } }
+.serv { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.7rem 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.2s, box-shadow 0.2s; }
+.serv:hover { transform: translateY(-3px); box-shadow: 0 14px 32px -10px rgba(20,35,63,0.12); }
+.serv-icon { font-family: var(--font-display); font-size: 1.8rem; color: var(--gold); line-height: 1; margin-bottom: 0.6rem; letter-spacing: 0.02em; }
+.serv h4 { font-family: var(--font-display); font-size: 1.3rem; color: var(--navy); line-height: 1.05; letter-spacing: 0.005em; }
+.serv > p { font-size: 0.9rem; color: var(--gray); line-height: 1.5; }
+.serv ul { list-style: none; padding: 0; margin-top: 0.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
+.serv li { font-size: 0.86rem; color: var(--ink); line-height: 1.45; padding-left: 1rem; position: relative; }
+.serv li::before { content: '·'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+.serv-img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 0.6rem; background: var(--cream); display: block; }
+.bigblock-art img { width: 100%; height: auto; max-width: 460px; border-radius: 14px; display: block; box-shadow: 0 20px 40px rgba(0,0,0,0.35); }
+.bigblock:not(.dash) .bigblock-art img { max-width: 290px; margin-left: auto; margin-right: auto; }
+
+/* BIGBLOCK (app + dashboard) */
+.bigblock { margin-top: 2.5rem; }
+.bigblock-inner { background: var(--navy); color: #fff; border-radius: var(--radius-lg); padding: clamp(1.6rem, 3vw, 2.4rem); display: grid; gap: 1.8rem; grid-template-columns: 1fr; align-items: center; position: relative; overflow: hidden; }
+@media (min-width: 900px) { .bigblock-inner { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .bigblock-inner.reverse { direction: rtl; } .bigblock-inner.reverse > * { direction: ltr; } }
+.bigblock-text .eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-bright); font-weight: 600; }
+.bigblock-text h3 { font-family: var(--font-display); font-size: clamp(1.7rem, 3vw, 2.3rem); color: #fff; margin: 0.6rem 0 1rem; letter-spacing: 0.005em; line-height: 1.05; }
+.bigblock-text > p { color: rgba(255,255,255,0.82); font-size: 0.98rem; line-height: 1.6; margin-bottom: 1.2rem; }
+.bigblock-text > p strong { color: var(--gold-bright); }
+.bigblock-text ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+.bigblock-text li { font-size: 0.92rem; color: rgba(255,255,255,0.85); line-height: 1.55; padding-left: 1.2rem; position: relative; }
+.bigblock-text li::before { content: '✓'; position: absolute; left: 0; color: var(--gold-bright); font-weight: 700; }
+.bigblock-art { display: flex; justify-content: center; align-items: center; }
+.bigblock-art svg { width: 100%; height: auto; max-width: 280px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.35)); }
+.bigblock.dash .bigblock-art svg { max-width: 420px; }
+.eco-header { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.eco-header .e-eyebrow { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.8rem; }
+.eco-header h3 { font-family: var(--font-display); font-size: clamp(1.8rem, 3.4vw, 2.6rem); color: var(--navy); line-height: 1.05; letter-spacing: 0.005em; max-width: 28ch; margin: 0 auto; }
+
+/* ROADMAP */
+.roadmap-bg { background: var(--cream); }
+.fases-grid { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.1rem; }
+.fase { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem 1.8rem; display: grid; gap: 1.5rem; grid-template-columns: 1fr; align-items: start; position: relative; overflow: hidden; }
+@media (min-width: 760px) { .fase { grid-template-columns: 80px 1fr; } }
+.fase::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--gold); }
+.fase-num { font-family: var(--font-display); font-size: clamp(3.5rem, 5vw, 4.5rem); color: var(--gold); line-height: 1; letter-spacing: 0.005em; }
+.fase-body h3 { font-family: var(--font-display); font-size: 1.5rem; color: var(--navy); margin-bottom: 0.5rem; letter-spacing: 0.005em; line-height: 1.05; }
+.fase-body > p { font-size: 0.95rem; color: var(--gray); line-height: 1.55; margin-bottom: 1.2rem; }
+.fase-cols { display: grid; gap: 1.5rem; grid-template-columns: 1fr; margin-bottom: 1rem; }
+@media (min-width: 760px) { .fase-cols { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1100px) { .fase-cols.three { grid-template-columns: repeat(3, 1fr); } }
+.fase-col h5 { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); margin-bottom: 0.6rem; font-weight: 600; }
+.fase-col ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+.fase-col li { font-size: 0.85rem; color: var(--ink); line-height: 1.45; padding-left: 1rem; position: relative; }
+.fase-col li::before { content: '·'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+.fase-tag { display: inline-block; margin-top: 0.6rem; padding: 0.35rem 0.8rem; background: var(--navy); color: var(--gold-bright); font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; border-radius: 100px; font-weight: 600; }
+.fase-split { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+.fase-split-card { background: var(--cream); border-radius: 8px; padding: 0.9rem 1rem; text-align: center; }
+.fase-split-card .pct { font-family: var(--font-display); font-size: 1.6rem; color: var(--navy); line-height: 1; }
+.fase-split-card .l { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.3rem; }
+.fase-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.fase-chip { background: var(--cream); color: var(--navy); padding: 0.3rem 0.7rem; border-radius: 100px; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.04em; border: 1px solid var(--line); }
+
+/* CASO EXITO */
+.caso-stats { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; margin: 2rem auto 0; max-width: 760px; }
+@media (min-width: 760px) { .caso-stats { grid-template-columns: repeat(4, 1fr); } }
+.caso-stat { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem 1rem; text-align: center; }
+.caso-stat .n { font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 2.9rem); color: var(--navy); line-height: 1; }
+.caso-stat .n.red { color: var(--red); }
+.caso-stat .l { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray); margin-top: 0.5rem; line-height: 1.3; }
+
+/* INVERSIÓN */
+.inversion-bg { background: var(--cream); }
+.price-table-wrap { margin-top: 2rem; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.price-table { width: 100%; min-width: 680px; border-collapse: separate; border-spacing: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.price-table th, .price-table td { padding: 0.85rem 1rem; text-align: center; border-bottom: 1px solid var(--line); vertical-align: middle; font-size: 0.9rem; color: var(--ink); }
+.price-table thead th { background: var(--navy); padding-top: 1.4rem; padding-bottom: 1.4rem; color: #fff; }
+.price-table .col-feat { text-align: left; font-family: var(--font-mono); font-size: 0.8rem; color: var(--gray); letter-spacing: 0.02em; background: var(--cream); font-weight: 500; }
+.price-table .tier-h { font-family: var(--font-display); font-size: 1.5rem; color: var(--gold-bright); letter-spacing: 0.02em; line-height: 1; margin-bottom: 0.3rem; display: block; }
+.price-table .tier-cad { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); display: block; margin-bottom: 0.8rem; }
+.price-table .tier-price-big { font-family: var(--font-display); font-size: 1.7rem; line-height: 1; color: #fff; }
+.price-table .tier-price-big small { font-family: var(--font-sans); font-size: 0.75rem; font-weight: 400; color: rgba(255,255,255,0.6); display: block; margin-top: 0.3rem; letter-spacing: 0; }
+.price-table .price-old { display: block; text-decoration: line-through; opacity: 0.5; font-size: 0.95rem; font-weight: 400; margin-bottom: 0.15rem; }
+.price-table .val-price { font-family: var(--font-display); font-size: 1.45rem; color: var(--navy); display: block; line-height: 1; letter-spacing: 0.01em; }
+.price-table .price-old-inline { display: block; text-decoration: line-through; opacity: 0.55; font-size: 0.78rem; color: var(--gray); margin-bottom: 0.2rem; }
+.tick { font-family: var(--font-display); font-size: 1.3rem; color: var(--gold); line-height: 1; }
+.dash { font-family: var(--font-display); font-size: 1.2rem; color: var(--gray-light); line-height: 1; }
+.price-table tbody tr:last-child td { border-bottom: 0; }
+.price-table .val-small { font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink); font-weight: 600; }
+.price-table .row-sub { font-family: var(--font-mono); font-size: 0.66rem; color: var(--gray); display: block; margin-top: 0.15rem; letter-spacing: 0.04em; font-weight: 400; }
+.price-section-header { background: var(--cream) !important; font-family: var(--font-mono) !important; font-size: 0.7rem !important; letter-spacing: 0.14em !important; text-transform: uppercase; color: var(--red) !important; text-align: left !important; padding: 0.9rem 1rem !important; font-weight: 600; border-top: 1px solid var(--line); }
+.price-note { margin-top: 1rem; font-size: 0.82rem; color: var(--gray); font-style: italic; }
+
+/* ROI / BUSINESS CASE */
+.roi-bg { background: var(--navy); color: #fff; }
+.roi-bg .section-num { color: var(--gold-bright); }
+.roi-bg .section-title { color: #fff; }
+.roi-bg .section-lead { color: rgba(255,255,255,0.78); }
+.roi-stats { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; margin-top: 2.2rem; }
+@media (min-width: 900px) { .roi-stats { grid-template-columns: repeat(4, 1fr); } }
+.roi-stat { background: rgba(255,255,255,0.05); border: 1px solid rgba(194,161,77,0.2); border-radius: var(--radius); padding: 1.5rem 1.2rem; }
+.roi-stat .n { font-family: var(--font-display); font-size: clamp(2.1rem, 3.6vw, 2.8rem); line-height: 1; color: var(--gold-bright); }
+.roi-stat .l { font-size: 0.84rem; color: rgba(255,255,255,0.75); margin-top: 0.5rem; line-height: 1.4; }
+.roi-flow { display: grid; gap: 1rem; grid-template-columns: 1fr; margin-top: 2.2rem; align-items: stretch; }
+@media (min-width: 900px) { .roi-flow { grid-template-columns: 1fr auto 1fr auto 1fr; align-items: center; } }
+.roi-flow-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); padding: 1.5rem 1.5rem; }
+.roi-flow-card.green { background: rgba(46,125,91,0.16); border-color: rgba(46,125,91,0.4); }
+.roi-flow-card .rf-tag { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-bright); font-weight: 600; margin-bottom: 0.6rem; }
+.roi-flow-card.green .rf-tag { color: #7BD0A8; }
+.roi-flow-card .rf-num { font-family: var(--font-display); font-size: clamp(1.9rem, 3.4vw, 2.5rem); color: #fff; line-height: 1; }
+.roi-flow-card p { font-size: 0.82rem; color: rgba(255,255,255,0.72); margin-top: 0.5rem; line-height: 1.45; }
+.roi-flow-arrow { font-family: var(--font-display); font-size: 2rem; color: var(--gold); text-align: center; }
+.scen-grid { display: grid; gap: 1.1rem; grid-template-columns: 1fr; margin-top: 2.2rem; }
+@media (min-width: 760px) { .scen-grid { grid-template-columns: repeat(3, 1fr); } }
+.scen { background: rgba(255,255,255,0.05); border: 1px solid rgba(194,161,77,0.2); border-radius: var(--radius); padding: 1.8rem 1.5rem; text-align: center; position: relative; }
+.scen.base { background: rgba(194,161,77,0.14); border-color: var(--gold); }
+.scen .s-tag { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7); font-weight: 600; }
+.scen.base .s-tag { color: var(--gold-bright); }
+.scen .s-red { font-family: var(--font-display); font-size: clamp(2.6rem, 5vw, 3.6rem); color: #fff; line-height: 1; margin: 0.5rem 0; }
+.scen .s-ahorro { font-size: 0.95rem; color: rgba(255,255,255,0.82); }
+.scen .s-roi { margin-top: 0.9rem; display: inline-block; background: rgba(46,125,91,0.2); border: 1px solid rgba(46,125,91,0.45); color: #7BD0A8; font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; padding: 0.4rem 1rem; border-radius: 100px; letter-spacing: 0.04em; }
+.scen.base .s-roi { background: var(--success); border-color: var(--success); color: #fff; }
+.roi-breakeven { margin-top: 2.2rem; background: var(--gold); color: var(--navy); border-radius: var(--radius); padding: 1.7rem 1.9rem; }
+.roi-breakeven h4 { font-family: var(--font-display); font-size: clamp(1.5rem, 2.8vw, 2.1rem); letter-spacing: 0.005em; line-height: 1.1; margin-bottom: 0.6rem; }
+.roi-breakeven p { font-size: 0.98rem; line-height: 1.55; color: #2a2110; max-width: 76ch; }
+.roi-mults { display: grid; gap: 1rem; grid-template-columns: 1fr; margin-top: 2rem; }
+@media (min-width: 760px) { .roi-mults { grid-template-columns: 1fr 1fr; } }
+.roi-row { background: rgba(255,255,255,0.05); border: 1px solid rgba(194,161,77,0.18); border-radius: var(--radius); padding: 1.8rem 1.6rem; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; }
+.roi-row-left .when { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-bright); margin-bottom: 0.4rem; font-weight: 600; }
+.roi-row-left h4 { font-family: var(--font-display); font-size: 1.3rem; color: #fff; letter-spacing: 0.005em; margin-bottom: 0.4rem; line-height: 1.1; }
+.roi-row-left p { font-size: 0.88rem; color: rgba(255,255,255,0.7); }
+.roi-mult { font-family: var(--font-display); font-size: clamp(3rem, 5vw, 4rem); color: var(--gold-bright); line-height: 1; letter-spacing: 0.005em; }
+.roi-disclaimer { margin-top: 2rem; padding: 1.1rem 1.4rem; background: rgba(255,255,255,0.04); border: 1px dashed rgba(255,255,255,0.25); border-radius: var(--radius); font-size: 0.84rem; color: rgba(255,255,255,0.68); line-height: 1.55; }
+
+/* COMPROMISO */
+.compromiso-bg { background: var(--cream); padding: clamp(4rem, 8vw, 6rem) 0; }
+.compromiso-statement { max-width: 720px; margin: 0 auto; text-align: center; font-family: var(--font-display); font-size: clamp(1.7rem, 3.3vw, 2.5rem); line-height: 1.15; color: var(--navy); letter-spacing: 0.005em; margin-bottom: 2rem; }
+.compromiso-statement em { color: var(--red); font-style: normal; }
+.compromiso-text { max-width: 720px; margin: 0 auto; text-align: center; font-size: 1.05rem; color: var(--gray); line-height: 1.6; }
+.compromiso-card { max-width: 540px; margin: 3rem auto 0; background: #fff; border-radius: var(--radius-lg); padding: 2rem; border: 1px solid var(--line); text-align: center; }
+.compromiso-card .signature { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray); margin-bottom: 0.5rem; }
+.compromiso-card .names { font-family: var(--font-display); font-size: 1.7rem; color: var(--navy); letter-spacing: 0.01em; }
+
+/* FOOTER */
+.footer { background: var(--navy); color: rgba(255,255,255,0.6); padding: 3rem 0; text-align: center; font-size: 0.85rem; border-top: 4px solid var(--gold); }
+.footer strong { color: var(--gold-bright); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="nav-brand"><strong>Fisify</strong><span class="x">×</span>Meliá Jardines del Teide</div>
+    <div class="nav-meta">Plan de Acción · 1 año</div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-eyebrow">Fisify <span style="color:#fff;opacity:0.5">×</span> Hotel Meliá Jardines del Teide</div>
+    <h1 class="hero-title">Plan de <span class="y">Acción.</span></h1>
+    <div class="hero-subtitle">1 año · Programa de Salud Física</div>
+    <a href="#diagnostico" class="hero-cta">Descubre el plan ↓</a>
+
+  </div>
+</header>
+
+<!-- 1. FASE DE DIAGNÓSTICO -->
+<section id="diagnostico">
+  <div class="container">
+    <p class="section-num">Fase de Diagnóstico</p>
+    <h2 class="section-title">Tras nuestra visita, <span class="y">descubrimos que…</span></h2>
+    <p class="section-lead">Cuatro vectores confirman que el plan es ejecutable y que el impacto será visible en 12 meses. La causa nº 1 del absentismo es exactamente donde Fisify actúa.</p>
+
+    <div class="diag-kpis">
+      <div class="diag-kpi">
+        <div class="label">Causa nº 1 identificada</div>
+        <div class="pct">114,9<span style="font-size:1rem"> días</span></div>
+        <p>Las enfermedades musculoesqueléticas son el grupo diagnóstico <strong>más frecuente</strong> (Mutua Universal) y duran 114,9 días de media por baja.</p>
+      </div>
+      <div class="diag-kpi">
+        <div class="label">Espacio de bienestar</div>
+        <div class="pct" style="font-size:1.5rem;line-height:1.05;max-width:16ch;">Ya existe, falta llenarlo</div>
+        <p>Hay sala con entrenamiento funcional y masajes. Hoy a las 18 h, fuera de turno: difícil de llenar. Fisify lo activa en horario laboral.</p>
+      </div>
+      <div class="diag-kpi">
+        <div class="label">Alineamiento</div>
+        <div class="pct">100%</div>
+        <p>Nueva dirección con la salud del equipo como prioridad. El absentismo ya está bajando y hay un objetivo claro para 2026.</p>
+      </div>
+      <div class="diag-kpi">
+        <div class="label">Plantilla adecuada</div>
+        <div class="pct">240</div>
+        <p>Personas en departamentos físicamente exigentes: pisos, cocina, sala, office y economato. Carga postural alta en todos ellos.</p>
+      </div>
+    </div>
+
+    <div class="roi-callout">
+      <div>
+        <h3>ROI &amp; Business Case</h3>
+        <p class="roi-headline">Absentismo MJDT <strong style="color: var(--gold-bright);">17%</strong> · objetivo de dirección <strong style="color: var(--gold-bright);">15%</strong> este año (−2 puntos). Las musculoesqueléticas — la causa nº 1 — son la palanca directa de Fisify.</p>
+      </div>
+      <div class="roi-fit">
+        <div class="num">95%</div>
+        <div class="lbl">Fit con el servicio</div>
+      </div>
+    </div>
+
+    <!-- BIO COMPACT (5 puestos · estudio ergonómico) -->
+    <div class="bio-compact">
+      <h3>Lo que vimos en los puestos críticos</h3>
+      <p class="lead">Tres secuencias grabadas durante la visita, una por departamento. Lectura biomecánica del gesto como fisioterapeutas ergónomos: postura, zona en riesgo y patología predicha. Coherente con la evaluación ergonómica de la propia SPRL de Meliá.</p>
+
+      <div class="bio-grid-c">
+
+        <!-- 01 PISOS -->
+        <article class="bioc">
+          <div class="bioc-fig">
+            <video src="1.mp4" poster="1.jpg" autoplay muted loop playsinline preload="metadata"></video>
+          </div>
+          <div class="bioc-body">
+            <div class="bioc-head">
+              <span class="bioc-id">01 · Pisos</span>
+              <span class="bioc-risk high">Alto</span>
+            </div>
+            <h4>Flexión de tronco sobre la cama</h4>
+            <div class="bioc-area">Housekeeping · habitación</div>
+            <p>Tronco flexionado y sostenido, sin apoyo, para hacer la cama y limpiar mobiliario bajo. Sobrecarga lumbar (L4-L5). La SPRL de Meliá ya marca nivel 3-4 en estas tareas.</p>
+          </div>
+        </article>
+
+        <!-- 02 OFFICE -->
+        <article class="bioc">
+          <div class="bioc-fig">
+            <video src="2.mp4" poster="2.jpg" autoplay muted loop playsinline preload="metadata"></video>
+          </div>
+          <div class="bioc-body">
+            <div class="bioc-head">
+              <span class="bioc-id">02 · Office</span>
+              <span class="bioc-risk high">Alto</span>
+            </div>
+            <h4>Carga del lavavajillas, gesto repetitivo</h4>
+            <div class="bioc-area">Office · friegaplatos</div>
+            <p>Movimiento repetido de muñeca y codo cargando bandejas de vajilla, con flexión hacia la cuba baja. Epicondilitis, tendinopatía de muñeca y sobrecarga cervical.</p>
+          </div>
+        </article>
+
+        <!-- 03 COCINA -->
+        <article class="bioc">
+          <div class="bioc-fig">
+            <video src="3.mp4" poster="3.jpg" autoplay muted loop playsinline preload="metadata"></video>
+          </div>
+          <div class="bioc-body">
+            <div class="bioc-head">
+              <span class="bioc-id">03 · Cocina</span>
+              <span class="bioc-risk critical">Crítico</span>
+            </div>
+            <h4>Limpieza bajo los fogones en cuclillas</h4>
+            <div class="bioc-area">Cocina · limpieza</div>
+            <p>Flexión extrema de tronco + cuello en hiperextensión + rodillas comprometidas para alcanzar bajo la plancha. Lumbar y cervical en riesgo agudo (equivalente OWAS nivel 4).</p>
+          </div>
+        </article>
+
+
+      </div>
+      <p class="bio-note">El patrón se repite en los distintos departamentos: el daño se concentra por debajo de las rodillas y por encima de los hombros. Es exactamente el tipo de gesto que Fisify corrige con tratamiento, ejercicio y educación postural.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 1.5 MOMENTUM · EL CAMBIO YA EMPEZÓ (Juan) -->
+<section class="momentum-bg">
+  <div class="container">
+    <p class="section-num">Desde 2026</p>
+    <h2 class="section-title">El cambio <span class="y">ya ha empezado.</span></h2>
+    <p class="section-lead">Con la nueva dirección de Juan, el hotel ya está doblando la curva del absentismo. Fisify no parte de cero: es la siguiente palanca sobre una base que ya funciona.</p>
+
+    <div class="mom-grid">
+      <div class="mom-card">
+        <div class="mc-tag">Instalaciones</div>
+        <h4>Reformas en el hotel</h4>
+        <p>Inversión en renovar espacios. Un entorno mejor cuidado reduce riesgo y mejora la experiencia del equipo.</p>
+      </div>
+      <div class="mom-card">
+        <div class="mc-tag">Cultura</div>
+        <h4>Dirección cercana</h4>
+        <p>Juan conoce a cada persona por su nombre. La cercanía es el mejor canal para que un programa de salud cale en plantilla.</p>
+      </div>
+      <div class="mom-card">
+        <div class="mc-tag">Resultado</div>
+        <h4>0 jefes de baja</h4>
+        <p>Antes había 5 jefes de departamento de baja. Hoy, ninguno. Señal directa de que el clima y la presión han mejorado.</p>
+      </div>
+      <div class="mom-card">
+        <div class="mc-tag">Desarrollo</div>
+        <h4>Planes de carrera</h4>
+        <p>El empleado puede crecer si quiere. El compromiso baja el absentismo evitable y sube la adherencia a iniciativas de salud.</p>
+      </div>
+      <div class="mom-card">
+        <div class="mc-tag">Bienestar</div>
+        <h4>Espacio para el equipo</h4>
+        <p>Sala con entrenamiento funcional y masajes relajantes. El reto: hoy es a las 18 h, fuera de turno, y cuesta que lleguen.</p>
+      </div>
+      <div class="mom-card">
+        <div class="mc-tag">Tecnología</div>
+        <h4>2 robots operativos</h4>
+        <p>Uno limpia la piscina, otro carga mercancía. Ya se está descargando físicamente al equipo. Fisify cuida la parte humana.</p>
+      </div>
+    </div>
+
+    <div class="mom-fit">
+      <h4>Dónde encaja Fisify</h4>
+      <p>El espacio de bienestar a las 18 h apenas llega a la plantilla porque es fuera de turno. <strong>Fisify llega al empleado dentro de su jornada</strong> — fisio presencial + digital — y ataca la causa nº 1 del absentismo: las lesiones musculoesqueléticas. Es la pieza que cierra los <strong>−2 puntos</strong> que busca la dirección este año… y deja margen para ir más allá.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. EL CAMBIO -->
+<section class="cambio-bg">
+  <div class="container">
+    <p class="section-num">El Cambio</p>
+    <h2 class="section-title">De Reactivo <span class="y">a 360</span></h2>
+    <p class="section-lead">El modelo que ya funciona en PreZero, Meliá (Hotel Castilla), Repsol, Eroski, Laboral Kutxa, DIA y Musgrave. Adaptado a Jardines del Teide.</p>
+
+    <div class="modelos">
+      <div class="modelo-card actual">
+        <div class="modelo-label">Modelo Actual</div>
+        <h3>Empleado con dolor → baja → mutua</h3>
+        <div class="flow-actual">Empleado tiene dolor <span class="arrow">→</span> Aguanta <span class="arrow">→</span> Empeora <span class="arrow">→</span> Baja <span class="arrow">→</span> Mutua <span class="arrow">→</span> Meses fuera</div>
+        <p class="modelo-footer"><strong>Absentismo 17%</strong> · musculoesqueléticas la causa nº 1 · 114,9 días de baja media · equipos al límite en temporada alta.</p>
+      </div>
+
+      <div class="modelo-card fisify">
+        <div class="modelo-label">Modelo Fisify 360</div>
+        <h3>Tres anillos que se refuerzan</h3>
+
+        <div class="fisify-pillar">
+          <div class="num">1</div>
+          <div>
+            <h4>Prevención</h4>
+            <div class="when">Antes del dolor</div>
+            <p>Empleado sano → App + ejercicios → Clases grupales → Se mantiene sano.</p>
+          </div>
+        </div>
+        <div class="fisify-pillar">
+          <div class="num">2</div>
+          <div>
+            <h4>Detección temprana</h4>
+            <div class="when">Primeras molestias</div>
+            <p>Empleado con molestia → Chat o cita rápida → Plan personalizado → Sin baja.</p>
+          </div>
+        </div>
+        <div class="fisify-pillar">
+          <div class="num">3</div>
+          <div>
+            <h4>Recuperación acelerada</h4>
+            <div class="when">Si hay lesión</div>
+            <p>Empleado lesionado → Tratamiento intensivo → Seguimiento diario → Vuelve antes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cambio-banner">Sin bajas largas · Equipos a pleno en temporada · Recuperación <strong>×3</strong> más rápida</div>
+  </div>
+</section>
+
+<!-- 3. ELEMENTOS ACTIVOS -->
+<section class="elementos-bg">
+  <div class="container">
+    <p class="section-num">Durante todo el programa</p>
+    <h2 class="section-title">Elementos <span class="y">Activos</span></h2>
+    <p class="section-lead">Servicios y herramientas disponibles desde el día 1 hasta el final del programa.</p>
+
+    <!-- Fisio asignado -->
+    <div class="fisio-block">
+      <div class="fisio-avatar">
+        <img src="https://lh3.googleusercontent.com/d/1zfRy_XtQkMMEZBYaDMG5ywwhnyB0w0YB=w400" alt="Fisioterapeuta asignado" />
+      </div>
+      <div>
+        <div class="eyebrow">Vuestro fisioterapeuta</div>
+        <h3>Fisioterapeuta asignado</h3>
+        <p class="desc">Vuestro fisioterapeuta de referencia durante todo el programa, disponible tanto en sesiones presenciales como de forma digital. Misma cara, mismo chat, mismo historial. Sin rotación.</p>
+        <ul>
+          <li>Fisioterapeuta colegiado con experiencia</li>
+          <li>Conoce vuestro caso en detalle</li>
+          <li>Disponible presencialmente en el hotel</li>
+          <li>Accesible por videollamada y chat</li>
+          <li>Seguimiento personalizado continuo</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Servicios Clave -->
+    <h3 class="serv-title">Servicios Clave</h3>
+    <div class="serv-grid">
+      <div class="serv">
+        <img class="serv-img" src="https://corporate-diagnosis-phase.vercel.app/melia/img/presencial.png" alt="Fisioterapia presencial" loading="lazy" />
+        <h4>Fisioterapia Presencial</h4>
+        <p>Servicio de fisioterapia dentro del hotel con fisioterapeutas colegiados.</p>
+        <ul>
+          <li>Sesiones individuales de 30 minutos</li>
+          <li>Tratamiento manual personalizado</li>
+          <li>Diagnóstico y plan de recuperación</li>
+          <li>Seguimiento continuo entre sesiones</li>
+        </ul>
+      </div>
+      <div class="serv">
+        <img class="serv-img" src="https://corporate-diagnosis-phase.vercel.app/melia/img/digital.png" alt="Fisioterapia digital" loading="lazy" />
+        <h4>Fisioterapia Digital</h4>
+        <p>El fisioterapeuta mantiene contacto activo con el empleado durante todo el programa.</p>
+        <ul>
+          <li>Videollamadas bajo demanda</li>
+          <li>Diseño de planes personalizados</li>
+          <li>Seguimiento semanal (~10 min/paciente)</li>
+        </ul>
+      </div>
+      <div class="serv">
+        <img class="serv-img" src="https://corporate-diagnosis-phase.vercel.app/melia/img/charla.png" alt="Formación y clases" loading="lazy" />
+        <h4>Formación y Clases</h4>
+        <p>Sesiones formativas y clases grupales para toda la plantilla, presenciales u online.</p>
+        <ul>
+          <li>Charlas de bienvenida y lanzamiento</li>
+          <li>Clases de espalda sana</li>
+          <li>Formación en ergonomía del puesto</li>
+          <li>Sesiones grupales por patología</li>
+        </ul>
+      </div>
+      <div class="serv">
+        <div class="serv-icon">&#8734;</div>
+        <h4>Chat Infinito con tu Fisio</h4>
+        <p>Comunicación ilimitada con tu fisioterapeuta asignado durante todo el programa.</p>
+        <ul>
+          <li>Respuesta en menos de 24 horas</li>
+          <li>Sin límite de mensajes</li>
+          <li>Consultas sobre ejercicios y dolores</li>
+          <li>Seguimiento de tu evolución</li>
+        </ul>
+      </div>
+      <div class="serv">
+        <div class="serv-icon">&#9670;</div>
+        <h4>Aplicación de Consejos Ergonómicos</h4>
+        <p>Recomendaciones personalizadas para mejorar la postura y el entorno de trabajo.</p>
+        <ul>
+          <li>Evaluación de tu puesto de trabajo</li>
+          <li>Consejos adaptados a tu departamento</li>
+          <li>Ejercicios preventivos específicos</li>
+          <li>Seguimiento de mejoras implementadas</li>
+        </ul>
+      </div>
+      <div class="serv">
+        <div class="serv-icon">&#9733;</div>
+        <h4>Sorteo y regalos mensuales</h4>
+        <p>Cada mes premiamos a quienes más cuidan su salud. Los empleados más constantes entran en un sorteo de regalos que Fisify organiza y gestiona de principio a fin — vosotros no tocáis logística.</p>
+        <ul>
+          <li>Regalos valorados en 50-70 € cada mes</li>
+          <li>Participan los empleados con mejor adherencia</li>
+          <li>Sorteo organizado y gestionado por Fisify</li>
+          <li>Refuerza el hábito de cuidarse mes a mes</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ECOSISTEMA: App -->
+    <div class="eco-header">
+      <p class="e-eyebrow">Todo unido en un ecosistema</p>
+      <h3>Una plataforma integrada que conecta todos los servicios de salud en un solo lugar.</h3>
+    </div>
+
+    <div class="bigblock">
+      <div class="bigblock-inner">
+        <div class="bigblock-text">
+          <div class="eyebrow">Para todos</div>
+          <h3>App con ecosistema integrado</h3>
+          <p>Acceso completo al <strong>ecosistema Fisify</strong> con gamificación integrada para todos los empleados, desde cualquier turno y también para el personal de temporada.</p>
+          <ul>
+            <li>Catálogo de ejercicios (prevención, fuerza, espalda sana)</li>
+            <li>Plan personalizado por patología</li>
+            <li>Chat con el fisioterapeuta</li>
+            <li>Videollamada con el fisio</li>
+            <li>Agendar cita presencial</li>
+            <li>Ranking de gamificación con premios mensuales</li>
+          </ul>
+        </div>
+        <div class="bigblock-art">
+          <img src="https://corporate-diagnosis-phase.vercel.app/melia/img/app.png" alt="App Fisify con ecosistema integrado" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ECOSISTEMA: Dashboard -->
+    <div class="eco-header">
+      <p class="e-eyebrow">Visibilidad en tiempo real</p>
+      <h3>Toda la información del programa, accesible para dirección y RRHH en cualquier momento.</h3>
+    </div>
+
+    <div class="bigblock dash">
+      <div class="bigblock-inner reverse">
+        <div class="bigblock-text">
+          <div class="eyebrow">Para Dirección y RRHH</div>
+          <h3>Analítica y Dashboard</h3>
+          <p>Visibilidad total sobre la evolución del programa <strong>en tiempo real</strong>. Mismo lenguaje que el informe de la mutua, sin necesidad de traducción.</p>
+          <ul>
+            <li>Panel en tiempo real</li>
+            <li>Informes mensuales por departamento</li>
+            <li>Empleados atendidos y sesiones realizadas</li>
+            <li>Evolución del dolor y adherencia por cohorte</li>
+            <li>Satisfacción (NPS) y feedback abierto</li>
+            <li>Reporte compatible con la mutua</li>
+          </ul>
+        </div>
+        <div class="bigblock-art dash-art">
+          <img src="https://corporate-diagnosis-phase.vercel.app/melia/img/reporting.png" alt="Analítica y dashboard del programa" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 4. ROADMAP -->
+<section class="roadmap-bg">
+  <div class="container">
+    <p class="section-num">Roadmap</p>
+    <h2 class="section-title">Las 5 fases <span class="y">del programa.</span></h2>
+    <p class="section-lead">Plan anual estructurado para diagnosticar pronto, llegar al pico estival rodados y consolidar hábitos a lo largo de los 12 meses.</p>
+
+    <div class="fases-grid">
+      <article class="fase">
+        <div class="fase-num">0</div>
+        <div class="fase-body">
+          <h3>Preparación</h3>
+          <p>Tener todo listo antes del lanzamiento para maximizar el impacto desde el día 1.</p>
+          <div class="fase-cols">
+            <div class="fase-col">
+              <h5>Decisiones críticas</h5>
+              <ul>
+                <li>Criterios de inclusión con dirección (foco musculoesquelético)</li>
+                <li>Prioridad: lesión activa · historial MSK · &gt;49 años · refuerzo estival</li>
+                <li>Orden departamentos: 1º Pisos → 2º Cocina → 3º Sala / Office / Economato</li>
+              </ul>
+            </div>
+            <div class="fase-col">
+              <h5>Comunicación</h5>
+              <ul>
+                <li>Plan interno (carteles, vestuarios, comedor, WhatsApp)</li>
+                <li>Coordinación con gobernanta y jefes de departamento</li>
+                <li>Material de bienvenida y onboarding del programa</li>
+              </ul>
+            </div>
+          </div>
+          <span class="fase-tag">Base del éxito</span>
+        </div>
+      </article>
+
+      <article class="fase">
+        <div class="fase-num">1</div>
+        <div class="fase-body">
+          <h3>Lanzamiento</h3>
+          <p>Que las 240 personas conozcan el programa y puedan darse de alta desde el día 1.</p>
+          <div class="yt-embed"><iframe src="https://www.youtube.com/embed/zO66owYdhpA?rel=0" title="Programa de salud física Meliá &amp; Fisify · Así hacemos los lanzamientos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+          <div class="fase-cols">
+            <div class="fase-col">
+              <h5>Offline</h5>
+              <ul>
+                <li>Charla de bienvenida del fisio en distintos turnos</li>
+                <li>Cartelería en zonas de paso, vestuarios y comedor</li>
+                <li>Punto de información en el hotel</li>
+              </ul>
+            </div>
+            <div class="fase-col">
+              <h5>Online</h5>
+              <ul>
+                <li>Comunicación a toda la plantilla</li>
+                <li>Alta en la app por departamento</li>
+                <li>Arranque de la gamificación con premios mensuales</li>
+              </ul>
+            </div>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--gray); margin-top: 0.6rem;"><strong style="color: var(--navy);">Objetivo:</strong> dar de alta a la mayor parte de la plantilla en la app.</p>
+          <div class="fase-tags">
+            <span class="fase-chip">Catálogo de ejercicios</span>
+            <span class="fase-chip">Chat con fisio</span>
+            <span class="fase-chip">Agendar citas</span>
+          </div>
+          <div style="margin-top: 0.8rem;"><span class="fase-tag">Arranque del programa</span></div>
+        </div>
+      </article>
+
+      <article class="fase">
+        <div class="fase-num">2</div>
+        <div class="fase-body">
+          <h3>Evaluación</h3>
+          <div class="eval-foto"><img src="https://lh3.googleusercontent.com/d/1OdPXafaAi46ELRTZYkSYRJSQJdkQvDFD=w700" alt="Sala de fisioterapia · Bienestar de colaboradores" loading="lazy" /></div>
+          <p>Diagnosticar a los empleados prioritarios y diseñar su plan personalizado.</p>
+          <div class="fase-cols">
+            <div class="fase-col">
+              <h5>Cada sesión (30 min) incluye</h5>
+              <ul>
+                <li>Diagnóstico físico de la zona más afectada</li>
+                <li>Tratamiento inicial con técnicas manuales</li>
+                <li>Plan personalizado diseñado en el momento</li>
+                <li>Alta en app con seguimiento activado</li>
+              </ul>
+            </div>
+            <div class="fase-col">
+              <h5>En paralelo</h5>
+              <ul>
+                <li>Resto de empleados activos en la app</li>
+                <li>Chat directo con el fisio para consultas</li>
+                <li>Participación en la gamificación</li>
+              </ul>
+            </div>
+          </div>
+          <div class="fase-tags">
+            <span class="fase-chip">30 min/sesión</span>
+            <span class="fase-chip">6 semanas</span>
+          </div>
+          <div style="margin-top: 0.8rem;"><span class="fase-tag">Diagnóstico individual</span></div>
+        </div>
+      </article>
+
+      <article class="fase">
+        <div class="fase-num">3</div>
+        <div class="fase-body">
+          <h3>Activación</h3>
+          <p>El empleado pasa de "me tratan" a "yo me cuido".</p>
+          <div class="fase-split">
+            <div class="fase-split-card"><div class="pct">50%</div><div class="l">Camilla</div></div>
+            <div class="fase-split-card"><div class="pct">50%</div><div class="l">Ejercicios</div></div>
+          </div>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.4rem;">
+            <li style="font-size: 0.88rem; color: var(--ink); line-height: 1.5; padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0; color: var(--gold); font-weight: 700;">·</span>Sesiones individuales activas: el fisio enseña, corrige y supervisa</li>
+            <li style="font-size: 0.88rem; color: var(--ink); line-height: 1.5; padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0; color: var(--gold); font-weight: 700;">·</span>Evolución natural: cada semana menos camilla, más ejercicios</li>
+            <li style="font-size: 0.88rem; color: var(--ink); line-height: 1.5; padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0; color: var(--gold); font-weight: 700;">·</span>El empleado ve cómo evoluciona su fuerza y su dolor, y coge el hábito</li>
+          </ul>
+          <div style="margin-top: 0.8rem;"><span class="fase-tag">Cambio de mentalidad</span></div>
+        </div>
+      </article>
+
+      <article class="fase">
+        <div class="fase-num">4</div>
+        <div class="fase-body">
+          <h3>Consolidación</h3>
+          <p>Hábitos sostenibles combinando atención individual y grupal. Se extiende los meses posteriores al pico estival hasta cerrar el año.</p>
+          <div class="fase-cols three">
+            <div class="fase-split-card"><div class="pct">25%</div><div class="l">Camilla · casos críticos</div></div>
+            <div class="fase-split-card"><div class="pct">25%</div><div class="l">Individual · seguimiento</div></div>
+            <div class="fase-split-card"><div class="pct">50%</div><div class="l">Grupal · 4-6 personas</div></div>
+          </div>
+          <h5 style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); margin: 1rem 0 0.6rem; font-weight: 600;">Clases grupales por patología</h5>
+          <div class="fase-tags">
+            <span class="fase-chip">Espalda sana</span>
+            <span class="fase-chip">Hombro y cervical</span>
+            <span class="fase-chip">Miembro inferior</span>
+            <span class="fase-chip">Suelo pélvico</span>
+            <span class="fase-chip">Antiestrés</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--gray); margin-top: 0.8rem;"><strong style="color: var(--navy);">Beneficio:</strong> cohesión entre departamentos y preparación física para la temporada alta.</p>
+          <div style="margin-top: 0.8rem;"><span class="fase-tag">Hábitos sostenibles</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CASO DE ÉXITO -->
+<section style="background: #fff;" id="prezero-case">
+  <div class="container">
+    <p class="section-num">Caso de éxito</p>
+    <h2 class="section-title">Lo que ya hemos demostrado <span class="y">en PreZero.</span></h2>
+    <p class="section-lead">No es una proyección: es el resultado real de aplicar el mismo método en una operativa con 12 centros y 683 usuarios.</p>
+
+    <div class="caso-stats">
+      <div class="caso-stat"><div class="n red">−47%</div><div class="l">Accidentes musculoesqueléticos</div></div>
+      <div class="caso-stat"><div class="n">95%</div><div class="l">Mejora clínica del dolor</div></div>
+      <div class="caso-stat"><div class="n">96%</div><div class="l">Continuidad del servicio</div></div>
+      <div class="caso-stat"><div class="n">56%</div><div class="l">Adopción de la plantilla</div></div>
+    </div>
+
+    <p style="text-align: center; margin-top: 2rem; font-size: 0.95rem; color: var(--gray); max-width: 760px; margin-left: auto; margin-right: auto; line-height: 1.55;">
+      <strong style="color: var(--navy);">12 centros · 683 usuarios · 9.100+ sesiones · 12-18 meses de adopción acumulada.</strong> Si funcionó en una operativa distribuida con 12 centros, funciona en un hotel de 240 personas con departamentos físicamente exigentes.
+    </p>
+  </div>
+</section>
+
+<!-- 6. INVERSIÓN -->
+<section class="inversion-bg">
+  <div class="container">
+    <p class="section-num">Inversión</p>
+    <h2 class="section-title">Tres modalidades <span class="y">de programa.</span></h2>
+    <p class="section-lead">Misma metodología y misma plataforma para las 240 personas. La diferencia es la intensidad presencial del fisioterapeuta. Facturación mensual.</p>
+
+    <div class="price-table-wrap">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th class="col-feat" style="text-align: left;"></th>
+            <th>
+              <span class="tier-h">Premium</span>
+              <span class="tier-cad">1 v / semana</span>
+            </th>
+            <th>
+              <span class="tier-h">Optimizado</span>
+              <span class="tier-cad">1 v / 15 días</span>
+            </th>
+            <th>
+              <span class="tier-h">Básico</span>
+              <span class="tier-cad">1 v / mes</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="price-section-header" colspan="4">Cobertura presencial</td></tr>
+          <tr>
+            <td class="col-feat">Visitas presenciales / año</td>
+            <td><span class="val-small">48</span></td>
+            <td><span class="val-small">24</span></td>
+            <td><span class="val-small">12</span></td>
+          </tr>
+          <tr>
+            <td class="col-feat">Jornada del fisio (8 h · ~14 pacientes/día)</td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+          </tr>
+          <tr>
+            <td class="col-feat">Fisioterapeuta asignado estable</td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+          </tr>
+
+          <tr><td class="price-section-header" colspan="4">Servicio digital</td></tr>
+          <tr>
+            <td class="col-feat">Plataforma Fisify (240 empleados)</td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+          </tr>
+          <tr>
+            <td class="col-feat">Videollamadas con fisio</td>
+            <td><span class="val-small">20/mes</span></td>
+            <td><span class="val-small">12/mes</span></td>
+            <td><span class="val-small">8/mes</span></td>
+          </tr>
+          <tr>
+            <td class="col-feat">Chat con fisio<span class="row-sub">Respuesta &lt; 24 h</span></td>
+            <td><span class="val-small">∞</span></td>
+            <td><span class="val-small">∞</span></td>
+            <td><span class="val-small">∞</span></td>
+          </tr>
+          <tr>
+            <td class="col-feat">Seguimiento telefónico<span class="row-sub">~10 min/sem por paciente</span></td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+          </tr>
+          <tr>
+            <td class="col-feat">Gamificación · ranking + sorteo de premios</td>
+            <td><span class="val-small">Mensual</span></td>
+            <td><span class="val-small">Mensual</span></td>
+            <td><span class="val-small">Trimestral</span></td>
+          </tr>
+
+          <tr><td class="price-section-header" colspan="4">Foco y reporte</td></tr>
+          <tr>
+            <td class="col-feat">Foco en colectivos diana (pisos · cocina · sala)</td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+          </tr>
+          <tr>
+            <td class="col-feat">Cuadro de mando<span class="row-sub">Adherencia · dolor · días recuperados · absentismo MSK</span></td>
+            <td><span class="val-small">Mensual</span></td>
+            <td><span class="val-small">Mensual</span></td>
+            <td><span class="val-small">Trimestral</span></td>
+          </tr>
+          <tr>
+            <td class="col-feat">Revisión conjunta Dirección · Fisify</td>
+            <td><span class="val-small">Semestral</span></td>
+            <td><span class="val-small">Semestral</span></td>
+            <td><span class="val-small">Semestral</span></td>
+          </tr>
+
+          <tr><td class="price-section-header" colspan="4">Condiciones</td></tr>
+          <tr>
+            <td class="col-feat">Facturación mensual</td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+            <td><span class="tick">✓</span></td>
+          </tr>
+          <tr><td class="price-section-header" colspan="4">Inversión</td></tr>
+          <tr>
+            <td class="col-feat">Precio / mes</td>
+            <td><span class="val-price">2.988,90 €</span></td>
+            <td><span class="val-price">2.224 €</span></td>
+            <td><span class="val-price">1.892 €</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="price-note">Precios mensuales. Cada visita = jornada de 8 h con capacidad para ~14 pacientes/día.</p>
+  </div>
+</section>
+
+<!-- 7. ROI / BUSINESS CASE -->
+<section class="roi-bg">
+  <div class="container">
+    <p class="section-num">El retorno</p>
+    <h2 class="section-title">El ROI: por qué <span class="y">sale a cuenta.</span></h2>
+    <p class="section-lead">El absentismo no es un coste fijo: es la mayor partida recuperable del hotel. Esto es lo que cuesta hoy y lo que Fisify devuelve.</p>
+
+    <div class="roi-stats">
+      <div class="roi-stat"><div class="n">17%</div><div class="l">Absentismo actual del hotel</div></div>
+      <div class="roi-stat"><div class="n">−2 pts</div><div class="l">Objetivo de dirección para 2026 (→ 15%)</div></div>
+      <div class="roi-stat"><div class="n">nº 1</div><div class="l">Las musculoesqueléticas, causa más frecuente (Mutua Universal)</div></div>
+      <div class="roi-stat"><div class="n">114,9</div><div class="l">Días de baja media en MSK · cada caso pesa</div></div>
+    </div>
+
+    <!-- coste real -->
+    <h3 style="font-family: var(--font-display); font-size: clamp(1.5rem,2.8vw,2.1rem); color:#fff; margin: 2.6rem 0 0.4rem; letter-spacing:0.005em;">El coste real no es solo el salario de la baja</h3>
+    <p style="color: rgba(255,255,255,0.78); max-width: 70ch; line-height:1.6;">Lo que se ve es el salario durante la baja. El coste real incluye sustituciones en temporada alta, horas extra del equipo, cotización, pérdida de servicio y rotación. El criterio habitual lo multiplica por dos.</p>
+
+    <div class="roi-flow">
+      <div class="roi-flow-card">
+        <div class="rf-tag">Lo que se ve</div>
+        <div class="rf-num">≈ 209.000 €</div>
+        <p>Coste salarial directo estimado del absentismo al año.</p>
+      </div>
+      <div class="roi-flow-arrow">→</div>
+      <div class="roi-flow-card">
+        <div class="rf-tag">Capas ocultas</div>
+        <div class="rf-num" style="font-size:1.15rem; line-height:1.35;">Sustituciones · horas extra · cotización · sobrecarga · rotación</div>
+      </div>
+      <div class="roi-flow-arrow">→</div>
+      <div class="roi-flow-card green">
+        <div class="rf-tag">El coste real</div>
+        <div class="rf-num">≈ 418.000 €</div>
+        <p>Coste total estimado del absentismo al año (×2).</p>
+      </div>
+    </div>
+
+    <!-- recuperable -->
+    <h3 style="font-family: var(--font-display); font-size: clamp(1.5rem,2.8vw,2.1rem); color:#fff; margin: 2.6rem 0 0.4rem; letter-spacing:0.005em;">Dónde actúa Fisify: el coste recuperable</h3>
+    <p style="color: rgba(255,255,255,0.78); max-width: 70ch; line-height:1.6;">Fisify ataca directamente las musculoesqueléticas — la causa nº 1 — más una parte de las traumáticas y del malestar inespecífico. El coste real recuperable se estima en <strong style="color:var(--gold-bright);">≈ 209.000 €/año</strong>. Sobre esa base, tres escenarios de reducción:</p>
+
+    <div class="scen-grid">
+      <div class="scen">
+        <div class="s-tag">Conservador</div>
+        <div class="s-red">−20%</div>
+        <div class="s-ahorro">ahorro ≈ 42.000 €/año</div>
+        <span class="s-roi">ROI ≈ 1,6×</span>
+      </div>
+      <div class="scen base">
+        <div class="s-tag">Escenario base</div>
+        <div class="s-red">−30%</div>
+        <div class="s-ahorro">ahorro ≈ 63.000 €/año</div>
+        <span class="s-roi">ROI ≈ 2,5×</span>
+      </div>
+      <div class="scen">
+        <div class="s-tag">Optimista</div>
+        <div class="s-red">−40%</div>
+        <div class="s-ahorro">ahorro ≈ 84.000 €/año</div>
+        <span class="s-roi">ROI ≈ 3,3×</span>
+      </div>
+    </div>
+    <p style="color: rgba(255,255,255,0.6); font-size:0.84rem; margin-top:1rem; line-height:1.5;">ROI calculado sobre la modalidad quincenal (≈ 25.499 €/año, con el 10% de descuento aplicado). Con modalidad mensual el ROI sube aún más; con la semanal el impacto absoluto en bajas es mayor.</p>
+
+    <!-- break-even -->
+    <div class="roi-breakeven">
+      <h4>Basta con evitar 1-2 bajas musculoesqueléticas largas al año</h4>
+      <p>Cada baja musculoesquelética dura de media 114,9 días. Con ese coste por caso, prevenir solo 1-2 de ellas al año paga el programa entero. Y la causa nº 1 del hotel es, justamente, la musculoesquelética. Fisify no es un gasto de bienestar: es una inversión que se recupera evitando las bajas más caras y más frecuentes.</p>
+    </div>
+
+    <!-- multiplicadores año -->
+    <div class="roi-mults">
+      <div class="roi-row">
+        <div class="roi-row-left">
+          <div class="when">Año 1</div>
+          <h4>Consolidación</h4>
+          <p>−2 a −4 puntos de absentismo · alineado con el objetivo de dirección</p>
+        </div>
+        <div class="roi-mult">2,5×</div>
+      </div>
+      <div class="roi-row">
+        <div class="roi-row-left">
+          <div class="when">Años 2-3</div>
+          <h4>Impacto sostenido</h4>
+          <p>Cultura preventiva integrada · cohorte tratada ampliada</p>
+        </div>
+        <div class="roi-mult">4×</div>
+      </div>
+    </div>
+
+    <div class="roi-disclaimer">
+      <strong style="color:#fff;">Nota metodológica.</strong> Las cifras económicas son una estimación a partir de la plantilla (240), el absentismo (17%) y el salario medio del sector hostelero, con un multiplicador ×2 para el coste real (criterio habitual en entornos con turnos y estacionalidad). Se ajustarán con el informe de coste completo de la mutua en cuanto esté disponible — la estructura del cálculo ya está lista para sustituir los números.
+    </div>
+  </div>
+</section>
+
+<!-- 8. COMPROMISO -->
+<section class="compromiso-bg">
+  <div class="container">
+    <p class="section-num" style="text-align: center; display: block;">Nuestro compromiso</p>
+    <p class="compromiso-statement">Asumimos toda la responsabilidad para que este proyecto sea un <em>éxito.</em></p>
+    <p class="compromiso-text">No venimos a cumplir un contrato: venimos a dar el 120% para que cada empleado note la diferencia.</p>
+    <p class="compromiso-text" style="margin-top: 1.5rem;">Queremos que el <strong style="color: var(--navy);">Hotel Meliá Jardines del Teide</strong> sea un caso de éxito de referencia en bienestar corporativo dentro de Meliá Hotels International. Un proyecto del que ambos estemos orgullosos y que marque el estándar en la hostelería.</p>
+
+    <div class="compromiso-card">
+      <div class="signature">Equipo Fisify</div>
+      <div class="names">Iñaki Markinez · Laura López</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <strong>Fisify</strong> · Bienestar corporativo basado en evidencia · Plan de Acción · 1 año<br>
+    <span style="opacity: 0.55; font-size: 0.78rem; margin-top: 0.5rem; display: inline-block;">
+      En colaboración con el Hotel Meliá Jardines del Teide · Cifras Mutua Universal 2025-2026 · Evaluación ergonómica SPRL Meliá · Documento confidencial · 2026
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
